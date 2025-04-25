@@ -1,0 +1,117 @@
+.menu-setas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff6d6;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .menu-setas h1 {
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+    color: #333;
+  }
+  
+  .seta {
+    font-size: 2em;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    transition: transform 0.2s ease;
+  }
+  
+  .seta:hover {
+    transform: scale(1.2);
+  }
+  
+  .seta.esquerda {
+    position: absolute;
+    left: 20px;
+  }
+  
+  .seta.direita {
+    position: absolute;
+    right: 20px;
+  }
+    
+
+body {
+    font-family: 'Comic Sans MS', cursive;
+    background: linear-gradient(to right, #ffe29f, #ffa99f);
+    text-align: center;
+    padding: 20px;
+    color: #333;
+  }
+  
+  header h1 {
+    font-size: 3em;
+    color: #444;
+    margin-bottom: 30px;
+  }
+  
+  .jogo {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 1.5em;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1.3em;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #ffcc70;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #fcb144;
+    transform: scale(1.1);
+  }
+  
+  .resultado {
+    font-size: 1.5em;
+    margin-top: 20px;
+    animation: fadeIn 1s ease;
+  }
+  
+  .vitoria {
+    color: green;
+    animation: pulse 1s infinite;
+  }
+  
+  .derrota {
+    color: red;
+    animation: shake 0.5s;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  
