@@ -1,8 +1,12 @@
+a {
+  color: #16bbbb;
+}
+
 .menu-setas {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #fff6d6;
+    background-color: #6b6a67;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 30px;
@@ -13,13 +17,13 @@
     margin: 0 auto;
     font-size: 2em;
     text-align: center;
-    color: #333;
+    color: #ffffff;
   }
   
   .seta {
     font-size: 2em;
     text-decoration: none;
-    color: #333;
+    color: hsl(0, 0%, 89%);
     padding: 10px;
     transition: transform 0.2s ease;
   }
@@ -41,17 +45,12 @@
 
 body {
     font-family: 'Comic Sans MS', cursive;
-    background: linear-gradient(to right, #ffe29f, #ffa99f);
+    background: linear-gradient(to right, #000000, #424141);
     text-align: center;
     padding: 20px;
-    color: #333;
+    color: #ffffff;
   }
   
-  header h1 {
-    font-size: 3em;
-    color: #444;
-    margin-bottom: 30px;
-  }
   
   .jogo {
     margin-bottom: 20px;
@@ -86,12 +85,12 @@ body {
   }
   
   .vitoria {
-    color: green;
+    color: rgb(8, 206, 8);
     animation: pulse 1s infinite;
   }
   
   .derrota {
-    color: red;
+    color: rgb(247, 71, 71);
     animation: shake 0.5s;
   }
   
