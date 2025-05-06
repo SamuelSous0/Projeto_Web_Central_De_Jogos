@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="menu-setas">
+        <a href="/index.html" class="seta esquerda">⬅️</a>
+        <h1>🎲 SOMA DE DADOS 🎲</h1>
+        <a href="" class="seta direita">➡️</a>
+    </header>
+    <section>
+        <button onclick="somaDados()">🎲 JOGAR</button>
+        <div id="res" class="resultado"></div>
+        <div id="res2" class="resultado"></div>
+
+    </section>
+    <footer>
+        <p>💡 Quer saber mais sobre esse jogo?</p>
+        <p><a href="#">Clique aqui para ver as regras!</a></p>
+    </footer>
+      <script>
+            function somaDados() {
+                const res = document.getElementById("res");
+
+                const dado1 = Math.floor(Math.random() * 6) + 1; 
+                const dado2 = Math.floor(Math.random() * 6) + 1;                
+                const dado3 = Math.floor(Math.random() * 6) + 1;  
+                const total = dado1 + dado2 + dado3;              
+
+                
+                res.innerHTML = `${dado1} + ${dado2} + ${dado3} = ${total}`;
+                return total
+            }
+            
+           
+            
+
+      </script>
+</body>
+</html>
