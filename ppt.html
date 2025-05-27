@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>✊📄✂️ Pedra, Papel ou Tesoura?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="menu-setas">
+    <a href="#" class="seta esquerda">⬅️</a>
+    <h1>✊📄✂️ JOGO DIVERTIDO</h1>
+    <a href="/somadosdados.html" class="seta direita">➡️</a>
+  </header>
+
+  <main class="jogo">
+    <h2>Escolha sua jogada!</h2>
+
+    <form id="form-pedrapapeltesoura">
+      <label>
+        <input type="radio" name="pedrapapeltesoura" value="pedra" />
+        ✊ PEDRA
+      </label>
+      <label>
+        <input type="radio" name="pedrapapeltesoura" value="papel" />
+        📄 PAPEL
+      </label>
+      <label>
+        <input type="radio" name="pedrapapeltesoura" value="tesoura" />
+        ✂️ TESOURA
+      </label>
+    </form>
+
+    <button onclick="jogar()">🎮 JOGAR AGORA!</button>
+
+    <div id="resppt" class="resultado"></div>
+  </main>
+
+  <footer>
+  <h2>📜 Regras do Jogo</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Você Escolhe</th>
+        <th>Ganha de</th>
+        <th>Perde para</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>✊ Pedra</td>
+        <td>✂️ Tesoura</td>
+        <td>📄 Papel</td>
+      </tr>
+      <tr>
+        <td>📄 Papel</td>
+        <td>✊ Pedra</td>
+        <td>✂️ Tesoura</td>
+      </tr>
+      <tr>
+        <td>✂️ Tesoura</td>
+        <td>📄 Papel</td>
+        <td>✊ Pedra</td>
+      </tr>
+    </tbody>
+  </table>
+</footer>
+  <script src="ppt.js"></script>
+</body>
+</html>
