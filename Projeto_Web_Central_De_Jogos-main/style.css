@@ -1,0 +1,177 @@
+.desenvolvedores {
+  margin-top: 20px;
+  padding: 10px;
+  border-top: 2px solid #ffcc70;
+}
+
+.desenvolvedores h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #ffcc70;
+}
+
+.desenvolvedores p {
+  margin: 5px 0;
+}
+
+.botoes-jogos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* espaçamento entre os botões */
+  align-items: center;
+  margin-top: 40px;
+}
+
+.botao-jogo {
+  display: inline-block;
+  background-color: #ffcc70;
+  color: #333;
+  font-size: 1.8em;
+  padding: 20px 40px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.botao-jogo:hover {
+  background-color: #fcb144;
+  transform: scale(1.1);
+}
+
+a {
+  color: #16bbbb;
+}
+
+.placar {
+    font-size: 2em;
+    margin-top: 30px;
+    color: gold;
+    border: 2px solid gold;
+    border-radius: 10px;
+    padding: 10px;
+    animation: pulse 1s infinite;
+    background-color: rgba(255, 215, 0, 0.1);
+}
+
+
+.menu-setas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6b6a67;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .menu-setas h1 {
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .seta {
+    font-size: 2em;
+    text-decoration: none;
+    color: hsl(0, 0%, 89%);
+    padding: 10px;
+    transition: transform 0.2s ease;
+  }
+  
+  .seta:hover {
+    transform: scale(1.2);
+  }
+  
+  .seta.esquerda {
+    position: absolute;
+    left: 20px;
+  }
+  
+  .seta.direita {
+    position: absolute;
+    right: 20px;
+  }
+    
+
+body {
+    font-family: 'Comic Sans MS', cursive;
+    background: linear-gradient(to right, #000000, #424141);
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+footer {
+    margin-top: auto; 
+    padding-top: 20px;
+}
+  
+  .jogo {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 1.5em;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1.3em;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #ffcc70;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #fcb144;
+    transform: scale(1.1);
+  }
+  
+  .resultado {
+    font-size: 1.5em;
+    margin-top: 20px;
+    animation: fadeIn 1s ease;
+  }
+  
+  .vitoria {
+    color: rgb(8, 206, 8);
+    animation: pulse 1s infinite;
+  }
+  
+  .derrota {
+    color: rgb(247, 71, 71);
+    animation: shake 0.5s;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  
