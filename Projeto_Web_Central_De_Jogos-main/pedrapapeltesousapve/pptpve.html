@@ -16,9 +16,10 @@
 
     <section class="pptpve">
         <div class="coluna">
-          <button class="btn-olho">🤫</button>
+          <button class="btn-olho" onclick="Mudarestado('jogador1')">🤫</button>
             <h2>🔴 JOGADOR 1 🔴</h2>
-            <form id="form-p1">
+            <div id="jogador1">
+              <form id="form-p1">
                 <label>
                   <input type="radio" name="pedrapapeltesourap1" value="pedra" />
                   ✊ PEDRA
@@ -32,12 +33,14 @@
                   ✂️ TESOURA
                 </label>
               </form>
+            </div>
         </div>
            
         <div class="coluna">
-          <button class="btn-olho">🤫</button>
+          <button class="btn-olho" onclick="Mudarestado('jogador2')">🤫</button>
             <h2>🔵 JOGADOR 2 🔵</h2>
-            <form id="form-p2">
+            <div id="jogador2">
+              <form id="form-p2">
                 <label>
                   <input type="radio" name="pedrapapeltesourap2" value="pedra" />
                   ✊ PEDRA
@@ -51,6 +54,7 @@
                   ✂️ TESOURA
                 </label>
               </form>
+            </div>
         </div>     
     </section>
 
