@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✊📄✂️ Pedra, Papel ou Tesoura?pve</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <header class="menu-setas">
+        <a href="/blackjack/blackjack.html" class="seta esquerda">⬅️</a>
+    <h1>✊📄✂️ Pedra, Papel ou Tesoura?</h1>
+    <a href="/pedrapapeltesoura/ppt.html" class="seta direita">➡️</a>
+    </header>
+
+    <section class="pptpve">
+        <div class="coluna">
+          <button class="btn-olho" onclick="Mudarestado('jogador1')">🤫</button>
+            <h2>🔴 JOGADOR 1 🔴</h2>
+            <div id="jogador1">
+              <form id="form-p1">
+                <label>
+                  <input type="radio" name="pedrapapeltesourap1" value="pedra" />
+                  ✊ PEDRA
+                </label>
+                <label>
+                  <input type="radio" name="pedrapapeltesourap1" value="papel" />
+                  📄 PAPEL
+                </label>
+                <label>
+                  <input type="radio" name="pedrapapeltesourap1" value="tesoura" />
+                  ✂️ TESOURA
+                </label>
+              </form>
+            </div>
+        </div>
+           
+        <div class="coluna">
+          <button class="btn-olho" onclick="Mudarestado('jogador2')">🤫</button>
+            <h2>🔵 JOGADOR 2 🔵</h2>
+            <div id="jogador2">
+              <form id="form-p2">
+                <label>
+                  <input type="radio" name="pedrapapeltesourap2" value="pedra" />
+                  ✊ PEDRA
+                </label>
+                <label>
+                  <input type="radio" name="pedrapapeltesourap2" value="papel" />
+                  📄 PAPEL
+                </label>
+                <label>
+                  <input type="radio" name="pedrapapeltesourap2" value="tesoura" />
+                  ✂️ TESOURA
+                </label>
+              </form>
+            </div>
+        </div>     
+    </section>
+
+    <section>
+      <center>
+        <button class="botoes-jogos" onclick="jogar()">🎮 JOGAR AGORA!</button>
+         
+      </center> 
+      
+      <div id="res"></div>
+</button>
+
+    </section>
+
+    <footer>
+    <p>💡 Quer saber mais sobre esse jogo?</p>
+    <p><a href="/pedrapapeltesousapve/regraspptpve.html">Clique aqui para ver as regras!</a></p>
+    <p><a href="/centraldosjogos.html">Voltar para tela inicial</a></p>
+    </footer>
+
+    <script src="/pedrapapeltesousapve/pptpve.js"></script>
+    
+</body>
+</html>
