@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo 21</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="menu-setas">
+  <a href="/jogodavelha/jogodavelha.html" class="seta esquerda">⬅️</a>
+  <h1>🃏 Jogo 21</h1>
+  <a href="/pedrapapeltesousapve/pptpve.html" class="seta direita">➡️</a>
+</header>
+
+<section>
+  <div>
+    <label for="numJogadores">Número de Jogadores:</label>
+    <select id="numJogadores">
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+    <button onclick="iniciarJogo()">Iniciar Jogo</button>
+  </div>
+
+  <div id="jogo" style="display:none;">
+    <h2 id="vezJogador"></h2>
+    <p>Pontuação atual: <span id="pontuacaoAtual">0</span></p>
+    <button onclick="comprarCarta()">🃏 Comprar Carta</button>
+    <button onclick="parar()">✋ Parar</button>
+  </div>
+
+  <div id="resultado"></div>
+</section>
+
+<footer>
+    <p>💡 Quer saber mais sobre esse jogo?</p>
+    <p><a href="/blackjack/regrasbj.html">Clique aqui para ver as regras!</a></p>
+    <p><a href="/centraldosjogos.html">Voltar para tela inicial</a></p>
+</footer>
+
+<script src="/blackjack/blackjack.js"></script>
+</body>
+</html>
